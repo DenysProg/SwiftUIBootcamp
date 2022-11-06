@@ -24,6 +24,7 @@ struct ShapesBootcamp: View {
 //            .stroke(.orange, style: StrokeStyle(lineWidth: 20, lineCap: .round, dash: [30]))
 //            .trim(from: 0.2, to: 1.0)
 //            .stroke(lineWidth: 5)
+        
     }
 }
 
