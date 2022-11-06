@@ -24,8 +24,6 @@ struct ImageBootcamp: View {
 //                RoundedRectangle(cornerRadius: 25.0)
 //                Ellipse()
 //            )
-        
-         
     }
 }
 
