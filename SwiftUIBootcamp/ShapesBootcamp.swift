@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ShapesBootcamp: View {
     var body: some View {

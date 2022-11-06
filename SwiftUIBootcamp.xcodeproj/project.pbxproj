@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,9 +17,13 @@
 		C2C7F1652913EA9300E50893 /* TextBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C7F1642913EA9300E50893 /* TextBootcamp.swift */; };
 		C2C7F1672914052100E50893 /* ShapesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C7F1662914052100E50893 /* ShapesBootcamp.swift */; };
 		C2C7F16929144D6D00E50893 /* ColorsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C7F16829144D6D00E50893 /* ColorsBootcamp.swift */; };
+		ED2136DFF2651237911D4335 /* Pods_SwiftUIBootcamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0587C4E36F6BA74B1CDB84CA /* Pods_SwiftUIBootcamp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0587C4E36F6BA74B1CDB84CA /* Pods_SwiftUIBootcamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIBootcamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A43571628D6CEE3858DA9C3D /* Pods-SwiftUIBootcamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIBootcamp.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIBootcamp/Pods-SwiftUIBootcamp.release.xcconfig"; sourceTree = "<group>"; };
+		A847BB710928042C63A53A86 /* Pods-SwiftUIBootcamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIBootcamp.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIBootcamp/Pods-SwiftUIBootcamp.debug.xcconfig"; sourceTree = "<group>"; };
 		C24A928F2914EFF100D07888 /* GradientsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsBootcamp.swift; sourceTree = "<group>"; };
 		C24A929129150D2600D07888 /* IconsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsBootcamp.swift; sourceTree = "<group>"; };
 		C24A929329157D3500D07888 /* ImageBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBootcamp.swift; sourceTree = "<group>"; };
@@ -38,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2136DFF2651237911D4335 /* Pods_SwiftUIBootcamp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +54,8 @@
 			children = (
 				C2C7F1552913EA4D00E50893 /* SwiftUIBootcamp */,
 				C2C7F1542913EA4D00E50893 /* Products */,
+				D6D505ADB6E8132BF4910DC4 /* Pods */,
+				D03CA1BFD1F6962681E713A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +92,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D03CA1BFD1F6962681E713A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0587C4E36F6BA74B1CDB84CA /* Pods_SwiftUIBootcamp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6D505ADB6E8132BF4910DC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A847BB710928042C63A53A86 /* Pods-SwiftUIBootcamp.debug.xcconfig */,
+				A43571628D6CEE3858DA9C3D /* Pods-SwiftUIBootcamp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2C7F1612913EA4F00E50893 /* Build configuration list for PBXNativeTarget "SwiftUIBootcamp" */;
 			buildPhases = (
+				E3D31BA5D8F84F5BDFF9C272 /* [CP] Check Pods Manifest.lock */,
 				C2C7F14F2913EA4D00E50893 /* Sources */,
 				C2C7F1502913EA4D00E50893 /* Frameworks */,
 				C2C7F1512913EA4D00E50893 /* Resources */,
+				4743A7CE18D21EA1A169C732 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -121,7 +148,7 @@
 				};
 			};
 			buildConfigurationList = C2C7F14E2913EA4D00E50893 /* Build configuration list for PBXProject "SwiftUIBootcamp" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -149,6 +176,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4743A7CE18D21EA1A169C732 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIBootcamp/Pods-SwiftUIBootcamp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIBootcamp/Pods-SwiftUIBootcamp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIBootcamp/Pods-SwiftUIBootcamp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3D31BA5D8F84F5BDFF9C272 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIBootcamp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C2C7F14F2913EA4D00E50893 /* Sources */ = {
@@ -285,6 +354,7 @@
 		};
 		C2C7F1622913EA4F00E50893 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A847BB710928042C63A53A86 /* Pods-SwiftUIBootcamp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +384,7 @@
 		};
 		C2C7F1632913EA4F00E50893 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A43571628D6CEE3858DA9C3D /* Pods-SwiftUIBootcamp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
