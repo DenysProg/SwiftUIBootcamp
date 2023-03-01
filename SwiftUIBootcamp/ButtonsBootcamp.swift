@@ -9,18 +9,21 @@ import SwiftUI
 
 struct ButtonsBootcamp: View {
     @State var title: String = "This is my title"
+    @State var changeColorButton: Bool = false
     
     var body: some View {
         VStack(spacing: 20) {
-            Text(title)
-            
-            Button("Press me!") {
-                self.title = "Button was pressed"
-            }
-            .accentColor(.red)
-            
+//            Text(title)
+//
+//            Button("Press me!") {
+//                self.title = "Button was pressed"
+//
+//            }
+//            .accentColor(.red)
+//
             Button {
                 self.title = "Button number 2 was pressed"
+                self.changeColorButton.toggle()
             } label: {
                 Text("Save".uppercased())
                     .font(.headline)
@@ -28,12 +31,13 @@ struct ButtonsBootcamp: View {
                     .foregroundColor(.white)
                     .padding()
                     .padding(.horizontal, 20)
-                    .background(
-                        Color.blue
-                            .cornerRadius(10)
-                            .shadow(radius: 10)
-                    )
+//                    .background(
+//                        Color.blue
+//                            .cornerRadius(10)
+//                            .shadow(radius: 10)
+//                    )
             }
+            .background(changeColorButton ? .red : .green)
             
             Button {
                 self.title = "Button number 3"
