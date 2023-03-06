@@ -30,32 +30,32 @@ struct PickerBootcamp: View {
     }
     
     var body: some View {
-        VStack {
-            Text("My Favorite Fruit: \(fruitName)")
-            
-            Picker("Me Picker", selection: $favoriteFruit) {
-                Text("Banana 🍌🍌")
-                    .tag(MyFruit.banana)
-                Text("Apple 🍎🍎")
-                    .tag(MyFruit.apple)
-                Text("Peach 🍑🍑")
-                    .tag(MyFruit.peach)
-            }
-            .pickerStyle(.segmented)
-        }
-        
-        
-        
-//        Form {
-//            Picker("Filter: ", selection: $selectedTheme) {
-//                ForEach(themes, id: \.self) {
-//                    Text($0)
-//                    Image(systemName: "heart.fill")
-//                }
+//        VStack {
+//            Text("My Favorite Fruit: \(fruitName)")
+//
+//            Picker("Me Picker", selection: $favoriteFruit) {
+//                Text("Banana 🍌🍌")
+//                    .tag(MyFruit.banana)
+//                Text("Apple 🍎🍎")
+//                    .tag(MyFruit.apple)
+//                Text("Peach 🍑🍑")
+//                    .tag(MyFruit.peach)
 //            }
+//            .pickerStyle(.segmented)
 //        }
-//        .font(.headline)
-//        .foregroundColor(.yellow)
+        
+        
+        
+        Form {
+            Picker("Filter: ", selection: $selectedTheme) {
+                ForEach(themes, id: \.self) {
+                    Text($0)
+                    Image(systemName: "heart.fill")
+                }
+            }
+        }
+        .font(.headline)
+        .foregroundColor(.yellow)
         
         
         
